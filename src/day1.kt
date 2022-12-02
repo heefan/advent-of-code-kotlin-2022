@@ -1,17 +1,17 @@
 import java.io.File
+import kotlin.*
 
 fun main() {
-    var maxValue = 0
-    var curValue = 0
+    var calorieCount = mutableListOf(0)
 
     File("resources/day1.txt").useLines { lines ->
         lines.forEach {
             if(it.isBlank()) {
-               maxValue = maxOf(maxValue, curValue)
-               curValue = 0
+               calorieCount.add(0)
             } else {
-               curValue += it.toInt()
+               calorieCount[calorieCount.lastIndex] += it.toInt()
             }
         }}
-    println(maxValue)
+    println(calorieCount.max())
+    println(calorieCount.sortedDescending().take(3).sum())
 }
