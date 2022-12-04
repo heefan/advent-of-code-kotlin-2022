@@ -2,8 +2,8 @@ fun main() {
     val day2 = Day2()
     val input = readInput("input2")
 
-    println(day2.part1(input))
-    println(day2.part2(input))
+    check(day2.part1(input) == 15337)
+    check(day2.part2(input) == 11696)
 }
 
 class Day2 {
