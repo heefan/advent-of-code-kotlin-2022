@@ -1,5 +1,4 @@
 # Day 1: Calorie Counting 
-
 --- 
 ### Simplified version: 
 Given input file day1.txt, which is a list of integers.
