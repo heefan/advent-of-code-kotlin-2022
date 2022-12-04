@@ -1,5 +1,15 @@
 # Day 4: Camp Cleanup
 
+### Simplified Version
+Given input4.txt file, for example,
+`57-93,9-57`
+indicate range 1: 57-93, and range 2: 9-57
+It doesn't contain each other.  It's valid. 
+
+Part1 Question: In how many assignment pairs do the ranges `completed overlap`?
+Part2 Question: In how many assignment pairs do the ranges `partial overlap`?
+
+
 ### Original
 #### Part1
 Space needs to be cleared before the last supplies can be unloaded from the ships,
@@ -76,6 +86,7 @@ while the remaining four pairs (5-7,7-9, 2-8,3-7, 6-6,4-6, and 2-6,4-8) do overl
 2-8,3-7 overlaps all of the sections 3 through 7.
 6-6,4-6 overlaps in a single section, 6.
 2-6,4-8 overlaps in sections 4, 5, and 6.
+
 So, in this example, the number of overlapping assignment pairs is 4.
 
 In how many assignment pairs do the ranges overlap?
