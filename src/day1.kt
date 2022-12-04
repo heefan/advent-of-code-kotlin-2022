@@ -1,19 +1,19 @@
 
 fun main() {
     val day1 = Day1()
-    val input = readInput("day1")
+    val input = readInput("input1")
 
-    day1.part1(input) { handler(input) }
-    day1.part2(input) { handler(input) }
+    check(day1.part1(input) { handler(input) } == 69310)
+    check(day1.part2(input) { handler(input) } == 206104)
 }
 
 class Day1 {
     //todo:  How to avoid the duplicate declaration of the handling?
-    fun part1(arg0: List<String>, handler: (arg1: List<String>) -> List<Int>) {
-        println(handler(arg0).max())
+    fun part1(arg0: List<String>, handler: (arg1: List<String>) -> List<Int>): Int {
+        return handler(arg0).max()
     }
-    fun part2(arg0: List<String>, handler: (arg1: List<String>) -> List<Int>) {
-        println(handler(arg0).sortedDescending().take(3).sum())
+    fun part2(arg0: List<String>, handler: (arg1: List<String>) -> List<Int>): Int {
+        return handler(arg0).sortedDescending().take(3).sum()
     }
 }
 
@@ -28,6 +28,3 @@ fun handler(input: List<String>) : List<Int> {
     }
     return sums
 }
-
-//69310
-//206104

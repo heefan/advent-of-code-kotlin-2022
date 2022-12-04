@@ -10,6 +10,9 @@ import kotlin.*
 fun readInput(name: String) = File("input", "$name.txt")
     .readLines()
 
+fun readInputAsText(name: String) = File("input", "$name.txt")
+    .readText()
+
 /**
  * Converts string to md5 hash.
  */
