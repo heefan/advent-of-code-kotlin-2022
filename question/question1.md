@@ -1,12 +1,12 @@
 # Day 1: Calorie Counting 
 --- 
 ### Simplified version: 
-Given input file day1.txt, which is a list of integers.
-The list contains many sections seperated by space. 
+given input file day1.txt, which is a list of integers.
+the list contains many sections separated by space. 
 
-#### Questions:
-Part1: Please print out the max value among the sections.
-Part2: Please print out the sum of the top 3 max values.
+#### questions:
+part1: please print out the max value among the sections.
+part2: please print out the sum of the top 3 max values.
 
 
 --- 
