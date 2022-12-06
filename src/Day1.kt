@@ -1,5 +1,6 @@
 fun main() {
-    val input = readInputAsText("input1")
+    val input = readInputAsText("input1").split("\n")
+    val input2 = readInput("input1")
 
     check(part1(input) == 69310)
     check(part2(input) == 206104)
